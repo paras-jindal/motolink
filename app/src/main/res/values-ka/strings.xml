@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Open Headunit</string>
+    <string name="app_name">MotoLink</string>
     <string name="menu">მენიუ</string>
     <string name="settings">პარამეტრები</string>
 
@@ -12,7 +12,7 @@
     <string name="video">Android Auto</string>
     <string name="self_mode">ავტონომიური რეჟიმი</string>
     <string name="to_android_auto">Android Auto-ზე გადასვლა</string>
-    <string name="title">Open Headunit</string>
+    <string name="title">MotoLink</string>
     <string name="remove">წაშლა</string>
     <string name="usb">USB</string>
     <string name="wifi">WiFi</string>
@@ -189,7 +189,7 @@
     <string name="usb_auto_connect">USB ავტო-კავშირი</string>
     <string name="usb_auto_connect_description">ცნობილ USB მოწყობილობასთან ავტომატური დაკავშირება აპლიკაციის გახსნისას.</string>
     <string name="auto_start_bt_label">ავტო-გაშვება Bluetooth-ით</string>
-    <string name="auto_start_bt_description">Open Headunit-ის ავტომატური გახსნა კონკრეტული Bluetooth მოწყობილობის დაკავშირებისას.</string>
+    <string name="auto_start_bt_description">MotoLink-ის ავტომატური გახსნა კონკრეტული Bluetooth მოწყობილობის დაკავშირებისას.</string>
     <string name="auto_start_offer_title">ავტომატურად გაეშვას?</string>
     <string name="auto_start_offer_message">გსურს აპლიკაციის ავტომატური გაშვება ამ მოწყობილობასთან, %1$s?</string>
     <string name="auto_start_offer_yes">დიახ</string>
@@ -211,7 +211,7 @@
     <string name="select_bt_device">აირჩიეთ Bluetooth მოწყობილობა</string>
     <string name="bt_device_not_set">არ არის მითითებული</string>
     <string name="auto_start_wifi_label">ავტო-გაშვება WiFi-ით</string>
-    <string name="auto_start_wifi_description">Open Headunit-ის ავტომატური გახსნა კონკრეტულ WiFi SSID-თან დაკავშირებისას.</string>
+    <string name="auto_start_wifi_description">MotoLink-ის ავტომატური გახსნა კონკრეტულ WiFi SSID-თან დაკავშირებისას.</string>
     <string name="auto_start_wifi_ssid_label">WiFi SSID</string>
     <string name="auto_start_wifi_ssid_description">დაკავშირება მხოლოდ ამ WiFi SSID-თან ყოფნისას</string>
     <string name="auto_start_wifi_warning">მოძველებული ფუნქცია: შესაძლოა საიმედოდ არ იმუშაოს Android 8+ ვერსიებზე ფონური შეზღუდვების გამო. დარწმუნდით, რომ აპლიკაცია ამოღებულია ელემენტის ოპტიმიზაციიდან.</string>
@@ -220,7 +220,7 @@
     <string name="bt_permission_denied_title">საჭიროა Bluetooth ნებართვა</string>
     <string name="bt_permission_denied_message">დაწყვილებული მოწყობილობების ასარჩევად საჭიროა Bluetooth ნებართვა. გთხოვთ, მიანიჭოთ იგი აპლიკაციის პარამეტრებიდან.</string>
     <string name="overlay_permission_title">ფონური გაშვების ნებართვა</string>
-    <string name="overlay_permission_description">იმისათვის, რომ Open Headunit ავტომატურად გაიხსნას Bluetooth-ის დაკავშირებისას, გთხოვთ, შემდეგ ეკრანზე ჩართოთ ნებართვა \"ჩვენება სხვა აპების ზემოთ\" (Display over other apps).</string>
+    <string name="overlay_permission_description">იმისათვის, რომ MotoLink ავტომატურად გაიხსნას Bluetooth-ის დაკავშირებისას, გთხოვთ, შემდეგ ეკრანზე ჩართოთ ნებართვა \"ჩვენება სხვა აპების ზემოთ\" (Display over other apps).</string>
     <string name="open_settings">პარამეტრები</string>
     <string name="right_hand_drive">მარჯვენასაჭიანი მართვა</string>
     <string name="right_hand_drive_description">ინტერფეისის მორგება მარჯვენა საჭის მქონე ავტომობილებისთვის</string>
@@ -314,9 +314,9 @@
 
     <string name="category_info">ინფორმაცია</string>
     <string name="about">შესახებ &amp; მხარდაჭერა</string>
-    <string name="about_description">მიიღეთ მეტი ინფორმაცია Open Headunit-ის შესახებ</string>
+    <string name="about_description">მიიღეთ მეტი ინფორმაცია MotoLink-ის შესახებ</string>
     <string name="version">ვერსია</string>
-    <string name="about_title">Open Headunit-ის შესახებ</string>
+    <string name="about_title">MotoLink-ის შესახებ</string>
     <string name="copyright">© 2025-%d André Rinas</string>
 
     <string name="disclaimer_title">უსაფრთხოება &amp; პასუხისმგებლობა</string>
@@ -326,7 +326,7 @@
         <b>1. ყურადღება გზაზე</b><br/>
         მართვის დროს ამ პროგრამის გამოყენებამ შეიძლება გაგიფანტოთ ყურადღება და შექმნას საფრთხე. ყოველთვის მიანიჭეთ უპირატესობა უსაფრთხო მართვას და დაიცავით საგზაო მოძრაობის ყველა ადგილობრივი წესი. გამოიყენეთ ეს აპლიკაცია მხოლოდ მაშინ, როდესაც ეს უსაფრთხოა.<br/><br/>
         <b>2. პასუხისმგებლობის შეზღუდვა</b><br/>
-        Open Headunit მოწოდებულია "როგორც არის" (as is) ყოველგვარი გარანტიის გარეშე. დეველოპერები არ იღებენ პასუხისმგებლობას რაიმე სახის ავარიაზე, თქვენი ავტომობილის/მოწყობილობის დაზიანებაზე ან სამართლებრივ შედეგებზე, რომლებიც გამოწვეულია ამ პროგრამის გამოყენებით.<br/><br/>
+        MotoLink მოწოდებულია "როგორც არის" (as is) ყოველგვარი გარანტიის გარეშე. დეველოპერები არ იღებენ პასუხისმგებლობას რაიმე სახის ავარიაზე, თქვენი ავტომობილის/მოწყობილობის დაზიანებაზე ან სამართლებრივ შედეგებზე, რომლებიც გამოწვეულია ამ პროგრამის გამოყენებით.<br/><br/>
         <b>3. დამოუკიდებლობა</b><br/>
         ეს პროექტი არის დამოუკიდებელი ღია კოდის მქონე ინიციატივა და არ არის ასოცირებული, დამტკიცებული ან დაკავშირებული Google LLC-სთან ან Android Auto ბრენდთან.
     ]]></string>
@@ -359,7 +359,7 @@
     <string name="export_settings_downloads">ჩამოტვირთვებში (Downloads) შენახვა</string>
     <string name="export_settings_app_folder">აპის სარეზერვო საქაღალდეში შენახვა</string>
     <string name="import_settings">პარამეტრების იმპორტი</string>
-    <string name="import_settings_description">პარამეტრების აღდგენა Open Headunit-ის სარეზერვო ასლიდან</string>
+    <string name="import_settings_description">პარამეტრების აღდგენა MotoLink-ის სარეზერვო ასლიდან</string>
     <string name="import_settings_choose_file">აირჩიეთ სარეზერვო ფაილი</string>
     <string name="import_settings_downloads">იმპორტი ჩამოტვირთვებიდან (Downloads)</string>
     <string name="import_settings_app_folder">იმპორტი აპის სარეზერვო საქაღალდიდან</string>
@@ -377,8 +377,8 @@
     <string name="no_file_picker_title">ფაილების მენეჯერი ვერ მოიძებნა</string>
     <string name="no_file_picker_message">ამ მოწყობილობას არ აქვს თავსებადი ფაილების მენეჯერი. ამის ნაცვლად შეგიძლიათ გამოიყენოთ ჩამოტვირთვები ან აპის სარეზერვო საქაღალდე.</string>
     <string name="no_settings_backups_title">სარეზერვო ასლები ვერ მოიძებნა</string>
-    <string name="no_settings_backups_message">აპის სარეზერვო საქაღალდეში Open Headunit-ის ასლები ვერ მოიძებნა. ჯერ გააკეთეთ ექსპორტი ამ საქაღალდეში, შემდეგ კი სცადეთ იმპორტი.</string>
-    <string name="no_settings_backups_downloads_message">ჩამოტვირთვებში Open Headunit-ის სარეზერვო ასლები ვერ მოიძებნა. ჯერ გააკეთეთ ექსპორტი ჩამოტვირთვებში, შემდეგ კი სცადეთ იმპორტი.</string>
+    <string name="no_settings_backups_message">აპის სარეზერვო საქაღალდეში MotoLink-ის ასლები ვერ მოიძებნა. ჯერ გააკეთეთ ექსპორტი ამ საქაღალდეში, შემდეგ კი სცადეთ იმპორტი.</string>
+    <string name="no_settings_backups_downloads_message">ჩამოტვირთვებში MotoLink-ის სარეზერვო ასლები ვერ მოიძებნა. ჯერ გააკეთეთ ექსპორტი ჩამოტვირთვებში, შემდეგ კი სცადეთ იმპორტი.</string>
     <string name="share_settings_backup">პარამეტრების სარეზერვო ასლის გაზიარება</string>
     <string name="logs_exported">ლოგების ექსპორტი შესრულებულია</string>
     <string name="log_saved_to">ლოგი შენახულია აქ:\n%s</string>
@@ -401,7 +401,7 @@
     <string name="wifi_disconnect_toast">Android Auto გაითიშა: თუ იყენებთ უ線ო კავშირს, გამორთეთ ფუნქციები \"Switch between networks\" ან \"Network acceleration\" ტელეფონის WiFi პარამეტრებიდან</string>
     <string name="reset_usb_option">USB კავშირის გადატვირთვა</string>
     <string name="reset_usb_timeout">USB მოწყობილობა ვერ მოიძებნა. გთხოვთ, შეამოწმოთ კავშირი.</string>
-    <string name="notification_service_running">Open Headunit აქტიურია</string>
+    <string name="notification_service_running">MotoLink აქტიურია</string>
     <string name="notification_projection_active">Android Auto პროეცირებულია</string>
     <string name="shortcut_connect_title">დაკავშირება</string>
     <string name="shortcut_connect_desc">ავტო-კავშირი ბოლო ტელეფონთან</string>
@@ -634,7 +634,7 @@
     <string name="onb_next">შემდეგი</string>
     <string name="onb_skip">გამოტოვება</string>
     <string name="onb_ready_finish">დასრულება</string>
-    <string name="onb_welcome_title">კეთილი იყოს თქვენი მობრძანება Open Headunit-ში</string>
+    <string name="onb_welcome_title">კეთილი იყოს თქვენი მობრძანება MotoLink-ში</string>
     <string name="onb_welcome_body">ეს სწრაფი გამართვა ასკანირებს თქვენს მოწყობილობას და ირჩევს ვიდეოს, ეკრანისა და ბნელი რეჟიმის საუკეთესო პარამეტრებს. ყველაფრის შეცვლა მოგვიანებით პარამეტრებში შეგიძლიათ.</string>
     <string name="onb_safety_title">უპირველესად უსაფრთხოება</string>
     <string name="onb_safety_accept">წავიკითხე და ვეთანხმები პირობებს</string>
@@ -722,7 +722,7 @@
     <string name="support_rules_connection_title">მიუთითეთ, როგორ უკავშირდებით</string>
     <string name="support_rules_connection_desc">USB კაბელი, USB უსადენო ადაპტერი, WiFi Direct, WiFi (headunit server) ან Self Mode. თუ კავშირი უსადენოა, დაამატეთ ადაპტერის ან დონგლის მოდელი.</string>
     <string name="support_rules_appversion_title">მიუთითეთ აპის ვერსია</string>
-    <string name="support_rules_appversion_desc">Open Headunit-ის ვერსია, რომელიც ნაჩვენებია შესახებ ეკრანზე.</string>
+    <string name="support_rules_appversion_desc">MotoLink-ის ვერსია, რომელიც ნაჩვენებია შესახებ ეკრანზე.</string>
     <string name="support_rules_logs_title">მიამაგრეთ ლოგი — პრობლემის შემდეგ დაუყოვნებლივ</string>
     <string name="support_rules_logs_desc">გახსენით პარამეტრები, გადადით დამატებითი ჩანართზე, ჩართეთ გამართვის რეჟიმი გამართვა განყოფილებაში, გაიმეორეთ პრობლემა, შემდეგ დაუყოვნებლივ შეეხეთ ლოგების ექსპორტი, რათა ლოგი მოიცავდეს შეცდომის მომენტს და არა მხოლოდ გაშვებას. მიამაგრეთ ეს ფაილი საკითხს.</string>
     <string name="support_rules_search_title">დუბლიკატები არ გახსნათ</string>
@@ -736,8 +736,8 @@
     <string name="support_rules_intro">მხოლოდ ორი რამ არის სავალდებულო. ყველა დანარჩენი სურვილისამებრ, მაგრამ ეს ძალიან აჩქარებს პრობლემის გადაჭრას.</string>
     <string name="support_rules_section_required">სავალდებულო</string>
     <string name="support_rules_section_recommend">რეკომენდაციები (სურვილისამებრ)</string>
-    <string name="rename_notice_title">ჩვენი სახელი იცვლება — Open Headunit</string>
-    <string name="rename_notice_message">Headunit Revived თქვენი წყალობით იზრდება და საკუთარ რაღაცად იქცევა: Open Headunit. ახალ სახელს მომდევნო განახლებების განმავლობაში თანდათან შემოვიღებთ, ამიტომ ზოგან ძველ სახელს ჯერ კიდევ დაინახავთ.\n\nიგივე აპი, იგივე ხალხი მის უკან, და ყველა თქვენი პარამეტრი ზუსტად ისე რჩება, როგორც არის.</string>
+    <string name="rename_notice_title">ჩვენი სახელი იცვლება — MotoLink</string>
+    <string name="rename_notice_message">Headunit Revived თქვენი წყალობით იზრდება და საკუთარ რაღაცად იქცევა: MotoLink. ახალ სახელს მომდევნო განახლებების განმავლობაში თანდათან შემოვიღებთ, ამიტომ ზოგან ძველ სახელს ჯერ კიდევ დაინახავთ.\n\nიგივე აპი, იგივე ხალხი მის უკან, და ყველა თქვენი პარამეტრი ზუსტად ისე რჩება, როგორც არის.</string>
     <string name="rename_notice_button">გასაგებია</string>
     <string name="aa174_notice_title">მნიშვნელოვანი შეტყობინება: Android Auto 17.4+</string>
     <string name="aa174_notice_message"><![CDATA[Android Auto 17.4 ვერსიიდან მოყოლებული, Google-მა დაბლოკა ავტომატური გაშვება Wireless Helper-ის საშუალებით და კლასიკური Self-Mode.<br/><br/><b>ხელმისაწვდომი გადაწყვეტილებები:</b><br/><br/><b>1. Headunit Server (დეველოპერის რეჟიმი):</b><br/>ერთადერთი გამოსავალი Self-Mode-სთვის! ტელეფონში გახსენით Android Auto-ს დეველოპერის პარამეტრები და ჩართეთ "Headunit Server".<br/><br/><b>2. ნატიური რეჟიმი:</b><br/>პირდაპირი კავშირი Wi-Fi Direct-ით ან ჰოტსპოტით.<br/><br/><b>3. უსადენო USB ადაპტერი:</b><br/>USB დონგლი უზრუნველყოფს ყველაზე სტაბილურ მუშაობას.<br/><br/><b>4. Wireless Helper:</b><br/>საიმედოდ მუშაობს Android Auto 17.3 ვერსიამდე.]]></string>
@@ -769,7 +769,7 @@
     <string name="perm_write_settings_help">Lets the app turn the hotspot on automatically for wireless connections.</string>
     <string name="perm_storage_title">Storage</string>
     <string name="perm_storage_help">Needed to back up and restore your settings and to pick a custom loading image.</string>
-    <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"Open Headunit\" if you use those apps.</string>
+    <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"MotoLink\" if you use those apps.</string>
     <string-array name="vehicle_brands">
         <item>Google</item>
         <item>Android</item>
@@ -825,8 +825,8 @@
     <string name="github_issues_url">https://github.com/andreknieriem/open-headunit/issues</string>
     <string name="support_rules_english_title">All posts in English</string>
     <string name="boot_loop_paused_title">Wireless start-up paused</string>
-    <string name="boot_loop_paused_generic">This device restarted three times in a row shortly after Open Headunit started wireless, so wireless was left off this time. USB still works. Open the app to turn it back on.</string>
-    <string name="boot_loop_paused_native_wifi_direct">This device restarted three times in a row shortly after Open Headunit started wireless, so wireless was left off this time. On some head units the WiFi chipset takes the whole system down when a phone joins a WiFi Direct network. Try switching Android Auto mode to the head unit hotspot. USB still works.</string>
+    <string name="boot_loop_paused_generic">This device restarted three times in a row shortly after MotoLink started wireless, so wireless was left off this time. USB still works. Open the app to turn it back on.</string>
+    <string name="boot_loop_paused_native_wifi_direct">This device restarted three times in a row shortly after MotoLink started wireless, so wireless was left off this time. On some head units the WiFi chipset takes the whole system down when a phone joins a WiFi Direct network. Try switching Android Auto mode to the head unit hotspot. USB still works.</string>
     <string name="vehicle_make_hint">A real car brand shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps installed from outside the Play Store. Set it back to \"Google\" to get those apps listed again.</string>
     <string name="external_bt_nativeaa">Native Wireless cannot work on this head unit</string>
     <string name="external_bt_nativeaa_desc">თქვენი ტელეფონი წყვილდება ამ მოწყობილობის საკუთარ Bluetooth მოდულთან (%1$s), და არა იმასთან, რომელსაც Android აპებს აწვდის, ამიტომ უსადენო ხელის ჩამორთმევა მასთან ვერასდროს მიაღწევდა.\n\nამ აპს ამ მოდულამდე მისასვლელი მხოლოდ ZJ/ZLink სერვისის გავლით აქვს, რომელსაც ეს მოწყობილობა არ უშვებს. ამის ნაცვლად გამოიყენეთ USB ან რომელიმე WiFi რეჟიმი.</string>
@@ -1101,7 +1101,7 @@
 
     <string name="category_more_features">მეტი ფუნქცია</string>
     <string name="pref_enable_floating_button_title">მცურავი ღილაკი</string>
-    <string name="pref_enable_floating_button_summary">აჩვენებს მცურავ ღილაკს სისტემურ ლაუნჩერსა და აპებზე Open Headunit-ში სწრაფად დასაბრუნებლად</string>
+    <string name="pref_enable_floating_button_summary">აჩვენებს მცურავ ღილაკს სისტემურ ლაუნჩერსა და აპებზე MotoLink-ში სწრაფად დასაბრუნებლად</string>
     <string name="pref_floating_button_size_title">მცურავი ღილაკის ზომა</string>
     <string name="pref_floating_button_opacity_title">მცურავი ღილაკის გამჭვირვალობა</string>
     <string name="pref_floating_button_x_title">ჰორიზონტალური პოზიცია (X)</string>
@@ -1126,7 +1126,7 @@
     <string name="oem_app_backend_adb">შესრულების მეთოდი: Self-ADB (127.0.0.1:5555) დაკავშირებულია</string>
     <string name="oem_app_backend_none">შესრულების მეთოდი: არ არის. ჩართეთ Wireless Debugging ან გაუშვით "adb tcpip 5555"</string>
     <string name="oem_app_autokill_switch">კონფლიქტური OEM აპების ავტო-გათიშვა გაშვებისას</string>
-    <string name="oem_app_autokill_switch_desc">აჩუმებს ცნობილ კონფლიქტურ აპებსა და პროცესებს Open Headunit-ის გაშვებისას.</string>
+    <string name="oem_app_autokill_switch_desc">აჩუმებს ცნობილ კონფლიქტურ აპებსა და პროცესებს MotoLink-ის გაშვებისას.</string>
     <string name="oem_app_autokill_enabled">ავტო-გათიშვა აქტიურია</string>
     <string name="oem_app_none_detected">კონფლიქტური OEM აპლიკაციები არ მოიძებნა.</string>
     <string name="oem_app_btn_commands">ბრძანებები</string>

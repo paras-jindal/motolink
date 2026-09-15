@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Open Headunit</string>
+    <string name="app_name">MotoLink</string>
     <string name="menu">Menü</string>
     <string name="settings">Beállítások</string>
 
@@ -12,7 +12,7 @@
     <string name="video">Android Auto</string>
     <string name="self_mode">Önálló mód</string>
     <string name="to_android_auto">Android Auto-ba</string>
-    <string name="title">Open Headunit</string>
+    <string name="title">MotoLink</string>
     <string name="remove">Eltávolít</string>
     <string name="usb">USB</string>
     <string name="wifi">WiFi</string>
@@ -161,14 +161,14 @@
     <string name="usb_auto_connect">Automatikus USB-csatlakozás</string>
     <string name="usb_auto_connect_description">Az alkalmazás megnyitásakor automatikus csatlakozás egy ismert USB-eszközhöz.</string>
     <string name="auto_start_bt_label">Bluetooth automatikus indítás</string>
-    <string name="auto_start_bt_description">A Open Headunit automatikus megnyitása, amikor egy adott Bluetooth-eszköz csatlakozik.</string>
+    <string name="auto_start_bt_description">A MotoLink automatikus megnyitása, amikor egy adott Bluetooth-eszköz csatlakozik.</string>
     <string name="auto_start_offer_title">Automatikus indítás?</string>
     <string name="auto_start_offer_message">Szeretnéd, hogy az alkalmazás automatikusan elinduljon ezzel az eszközzel, %1$s?</string>
     <string name="auto_start_offer_yes">Igen</string>
     <string name="auto_start_offer_no">Nem</string>
     <string name="auto_start_offer_countdown">Nem %1$d mp múlva</string>
     <string name="auto_start_wifi_label">WiFi automatikus indítás</string>
-    <string name="auto_start_wifi_description">A Open Headunit automatikus megnyitása egy adott WiFi SSID-hez való csatlakozáskor.</string>
+    <string name="auto_start_wifi_description">A MotoLink automatikus megnyitása egy adott WiFi SSID-hez való csatlakozáskor.</string>
     <string name="auto_start_wifi_ssid_label">WiFi SSID</string>
     <string name="auto_start_wifi_ssid_description">Csak akkor csatlakozzon, ha ehhez a WiFi SSID-hez kapcsolódik</string>
     <string name="auto_start_wifi_warning">Régi funkció: a háttérbeli korlátozások miatt Android 8+ rendszeren nem biztos, hogy megbízhatóan működik. Győződjön meg róla, hogy az alkalmazás ki van véve az akkumulátor-optimalizálás alól.</string>
@@ -193,7 +193,7 @@
     <string name="bt_permission_denied_title">Bluetooth-engedély szükséges</string>
     <string name="bt_permission_denied_message">A párosított eszközök kiválasztásához Bluetooth-engedély szükséges. Kérjük, engedélyezze az alkalmazás beállításaiban.</string>
     <string name="overlay_permission_title">Háttérben indítás engedélye</string>
-    <string name="overlay_permission_description">Ahhoz, hogy a Open Headunit automatikusan megnyíljon Bluetooth-csatlakozáskor, engedélyezd a következő képernyőn a „Megjelenítés más alkalmazások felett” jogosultságot.</string>
+    <string name="overlay_permission_description">Ahhoz, hogy a MotoLink automatikusan megnyíljon Bluetooth-csatlakozáskor, engedélyezd a következő képernyőn a „Megjelenítés más alkalmazások felett” jogosultságot.</string>
     <string name="open_settings">Beállítások</string>
     <string name="wireless_connection_settings">Vezeték nélküli kapcsolat</string>
     <string name="right_hand_drive">Jobbkormányos vezetés</string>
@@ -273,9 +273,9 @@
     <!-- Info Settings -->
     <string name="category_info">Információ</string>
     <string name="about">Rólunk &amp; támogatás</string>
-    <string name="about_description">További információk a Open Headunit-ról.</string>
+    <string name="about_description">További információk a MotoLink-ról.</string>
     <string name="version">Verzió</string>
-    <string name="about_title">Open Headunit-ról</string>
+    <string name="about_title">MotoLink-ról</string>
     <string name="copyright">© 2025-%d André Rinas</string>
 
     <!-- Safety Disclaimer -->
@@ -286,7 +286,7 @@
         <b>1. Figyelj az útra</b><br/>
         A szoftver használata vezetés közben elvonhatja a figyelmet és veszélyes lehet. Mindig a biztonságos vezetést helyezd előtérbe, és tartsd be a helyi közlekedési szabályokat. Az alkalmazást csak akkor használd, ha az biztonságos.<br/><br/>
         <b>2. Felelősség korlátozása</b><br/>
-        A Open Headunit „adott állapotában” kerül szolgáltatásra, bármiféle garancia nélkül. A fejlesztők nem vállalnak felelősséget a szoftver használatából eredő balesetekért, a járműben vagy eszközben keletkezett károkért, illetve az esetleges jogi következményekért.<br/><br/>
+        A MotoLink „adott állapotában” kerül szolgáltatásra, bármiféle garancia nélkül. A fejlesztők nem vállalnak felelősséget a szoftver használatából eredő balesetekért, a járműben vagy eszközben keletkezett károkért, illetve az esetleges jogi következményekért.<br/><br/>
         <b>3. Nincs kapcsolat</b><br/>
         Ez a projekt egy független, nyílt forráskódú kezdeményezés, mely nem áll kapcsolatban a Google LLC-vel vagy az Android Auto márkával, valamint nem kap tőlük támogatást és nincs jóváhagyva általuk.
     ]]></string>
@@ -332,7 +332,7 @@
     <string name="connection_interrupted">Kapcsolat elveszett</string>
     <string name="connection_interrupted_detail">Újrapróbálkozás…</string>
     <string name="wifi_disconnect_toast">Android Auto leválasztva: Ha vezeték nélküli AA-t használ, tiltsa le a \"Hálózatok közötti váltás\" vagy \"Hálózatgyorsítás\" opciót a telefon WiFi beállításaiban</string>
-    <string name="notification_service_running">Open Headunit fut</string>
+    <string name="notification_service_running">MotoLink fut</string>
     <string name="notification_projection_active">Android Auto kivetítve</string>
     <string name="shortcut_connect_title">Kapcsolódás</string>
     <string name="shortcut_connect_desc">Kapcsolódás az utolsó ismert eszközhöz</string>
@@ -589,7 +589,7 @@
     <string name="settings_backup_saved_to">Biztonsági mentés ide mentve:\n%1$s</string>
     <string name="share_settings_backup">Biztonsági mentés megosztása</string>
     <string name="import_settings">Beállítások importálása</string>
-    <string name="import_settings_description">Beállítások visszaállítása egy Open Headunit mentésből</string>
+    <string name="import_settings_description">Beállítások visszaállítása egy MotoLink mentésből</string>
     <string name="import_settings_app_folder">Importálás az alkalmazás mentési mappájából</string>
     <string name="import_settings_downloads">Importálás a Letöltésekből</string>
     <string name="import_settings_choose_file">Mentési fájl kiválasztása</string>
@@ -597,8 +597,8 @@
     <string name="settings_imported">Beállítások importálva: %1$d alkalmazva, %2$d kihagyva</string>
     <string name="settings_import_failed">A beállítások importálása sikertelen: %1$s</string>
     <string name="no_settings_backups_title">Nem található mentés</string>
-    <string name="no_settings_backups_message">Az alkalmazás mentési mappájában nem található Open Headunit mentés. Először exportáljon egy mentést, majd importálja innen.</string>
-    <string name="no_settings_backups_downloads_message">A Letöltések mappában nem található Open Headunit mentés. Először exportáljon egy mentést a Letöltésekbe, majd importálja innen.</string>
+    <string name="no_settings_backups_message">Az alkalmazás mentési mappájában nem található MotoLink mentés. Először exportáljon egy mentést, majd importálja innen.</string>
+    <string name="no_settings_backups_downloads_message">A Letöltések mappában nem található MotoLink mentés. Először exportáljon egy mentést a Letöltésekbe, majd importálja innen.</string>
     <string name="no_file_picker_title">Nem érhető el fájlválasztó</string>
     <string name="no_file_picker_message">Ezen az eszközön nincs kompatibilis fájlválasztó. Helyette használhatja a Letöltések mappát vagy az alkalmazás mentési mappáját.</string>
     <string name="storage_permission_denied_backup">Tárhely engedély megtagadva. A Letöltések nem használható.</string>
@@ -700,7 +700,7 @@
     <string name="onb_next">Tovább</string>
     <string name="onb_skip">Kihagyás</string>
     <string name="onb_ready_finish">Befejezés</string>
-    <string name="onb_welcome_title">Üdvözöl a Open Headunit</string>
+    <string name="onb_welcome_title">Üdvözöl a MotoLink</string>
     <string name="onb_welcome_body">Ez a gyorsbeállítás megvizsgálja az eszközödet, és kiválasztja számodra a legjobb videó-, kijelző- és éjszakai mód beállításokat. Mindent később is módosíthatsz a Beállításokban.</string>
     <string name="onb_safety_title">Biztonság mindenekelőtt</string>
     <string name="onb_safety_accept">Elolvastam és elfogadom a feltételeket</string>
@@ -793,7 +793,7 @@
     <string name="support_rules_connection_title">Mondd el, hogyan csatlakozol</string>
     <string name="support_rules_connection_desc">USB-kábellel, USB-s vezeték nélküli adapterrel, WiFi Direct-tel, WiFi-n (fejegység szerver) vagy Self Mode-ban. Ha vezeték nélküli, add meg az adapter vagy dongle modelljét is.</string>
     <string name="support_rules_appversion_title">Add meg az alkalmazás verzióját</string>
-    <string name="support_rules_appversion_desc">A Open Headunit verziószámát a Rólunk képernyőn találod.</string>
+    <string name="support_rules_appversion_desc">A MotoLink verziószámát a Rólunk képernyőn találod.</string>
     <string name="support_rules_logs_title">Csatold a naplókat, rögtön a hiba után</string>
     <string name="support_rules_logs_desc">Menj a Beállítások Speciális fülére, kapcsold be a Hibakeresési módot a Hibakeresés részben, idézd elő a problémát, majd közvetlenül utána koppints a Naplók exportálása gombra, hogy a napló tartalmazza a hibás pillanatot, ne csak az indítást. Ezt a fájlt csatold a hibajegyedhez.</string>
     <string name="support_rules_search_title">Nincs kettőzés</string>
@@ -804,8 +804,8 @@
     <string name="support_rules_describe_desc">Mit csináltál, mit vártál, és mi történt valójában. Vizuális problémáknál egy képernyőfotó vagy rövid videó sokat segít.</string>
     <string name="support_rules_oneissue_title">Egy hibajegy, egy probléma</string>
     <string name="support_rules_oneissue_desc">Minden hibajegy egyetlen problémáról szóljon, hogy könnyen nyomon követhető és javítható legyen. Egymással össze nem függő problémákhoz nyiss külön hibajegyeket.</string>
-    <string name="rename_notice_title">A nevünk erre változik: Open Headunit</string>
-    <string name="rename_notice_message">A Headunit Revived nektek köszönhetően egyre nő, és valami sajáttá válik: Open Headunit. Az új nevet a következő frissítések során fokozatosan vezetjük be, így néhány helyen egy ideig még a régi nevet láthatod.\n\nUgyanaz az alkalmazás, ugyanazokkal az emberekkel a háttérben, és minden beállításod pontosan úgy marad, ahogy van.</string>
+    <string name="rename_notice_title">A nevünk erre változik: MotoLink</string>
+    <string name="rename_notice_message">A Headunit Revived nektek köszönhetően egyre nő, és valami sajáttá válik: MotoLink. Az új nevet a következő frissítések során fokozatosan vezetjük be, így néhány helyen egy ideig még a régi nevet láthatod.\n\nUgyanaz az alkalmazás, ugyanazokkal az emberekkel a háttérben, és minden beállításod pontosan úgy marad, ahogy van.</string>
     <string name="rename_notice_button">Értem</string>
     <string name="aa174_notice_title">Fontos figyelmeztetés: Android Auto 17.4+</string>
     <string name="aa174_notice_message"><![CDATA[Az Android Auto 17.4-es verziójától kezdve a Google olyan belső módosításokat vezetett be, amelyek letiltják az automatikus indítást a Wireless Helperen keresztül, valamint a klasszikus Self-Mode-ot.<br/><br/><b>Elérhető megoldások:</b><br/><br/><b>1. Headunit Server (Fejlesztői mód):</b><br/>Az egyetlen működő megoldás Self-Mode esetén! Telefonján nyissa meg az Android Auto fejlesztői beállításait, és koppintson a "Headunit Server indítása" lehetőségre.<br/><br/><b>2. Natív mód:</b><br/>Közvetlen kapcsolódás Wi-Fi Directen vagy a fejegység hotspotján keresztül.<br/><br/><b>3. Vezeték nélküli USB adapter:</b><br/>Egy hardveres USB adapter biztosítja a legstabilabb működést.<br/><br/><b>4. Wireless Helper:</b><br/>Megbízhatóan működik az Android Auto 17.3-as verziójáig.]]></string>
@@ -837,7 +837,7 @@
     <string name="perm_write_settings_help">Lets the app turn the hotspot on automatically for wireless connections.</string>
     <string name="perm_storage_title">Storage</string>
     <string name="perm_storage_help">Needed to back up and restore your settings and to pick a custom loading image.</string>
-    <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"Open Headunit\" if you use those apps.</string>
+    <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"MotoLink\" if you use those apps.</string>
     <string-array name="vehicle_brands">
         <item>Google</item>
         <item>Android</item>
@@ -893,8 +893,8 @@
     <string name="github_issues_url">https://github.com/andreknieriem/open-headunit/issues</string>
     <string name="support_rules_english_title">All posts in English</string>
     <string name="boot_loop_paused_title">Wireless start-up paused</string>
-    <string name="boot_loop_paused_generic">This device restarted three times in a row shortly after Open Headunit started wireless, so wireless was left off this time. USB still works. Open the app to turn it back on.</string>
-    <string name="boot_loop_paused_native_wifi_direct">This device restarted three times in a row shortly after Open Headunit started wireless, so wireless was left off this time. On some head units the WiFi chipset takes the whole system down when a phone joins a WiFi Direct network. Try switching Android Auto mode to the head unit hotspot. USB still works.</string>
+    <string name="boot_loop_paused_generic">This device restarted three times in a row shortly after MotoLink started wireless, so wireless was left off this time. USB still works. Open the app to turn it back on.</string>
+    <string name="boot_loop_paused_native_wifi_direct">This device restarted three times in a row shortly after MotoLink started wireless, so wireless was left off this time. On some head units the WiFi chipset takes the whole system down when a phone joins a WiFi Direct network. Try switching Android Auto mode to the head unit hotspot. USB still works.</string>
     <string name="vehicle_make_hint">A real car brand shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps installed from outside the Play Store. Set it back to \"Google\" to get those apps listed again.</string>
     <string name="external_bt_nativeaa">Native Wireless cannot work on this head unit</string>
     <string name="external_bt_nativeaa_desc">A telefonod a fejegység saját Bluetooth-moduljával (%1$s) párosul, nem azzal, amit az Android az alkalmazások számára elérhetővé tesz, így a vezeték nélküli kézfogás soha nem érné el.\n\nEz az alkalmazás csak egy ZJ/ZLink-szolgáltatáson keresztül érheti el ezt a modult, amelyet ez a fejegység nem futtat. Használj inkább USB-t vagy egy WiFi módot.</string>
@@ -1116,7 +1116,7 @@
 
     <string name="category_more_features">További funkciók</string>
     <string name="pref_enable_floating_button_title">Lebegő indítógomb</string>
-    <string name="pref_enable_floating_button_summary">Lebegő gomb megjelenítése az OEM indító és egyéb alkalmazások felett az Open Headunit gyors eléréséhez</string>
+    <string name="pref_enable_floating_button_summary">Lebegő gomb megjelenítése az OEM indító és egyéb alkalmazások felett az MotoLink gyors eléréséhez</string>
     <string name="pref_floating_button_size_title">Lebegő gomb mérete</string>
     <string name="pref_floating_button_opacity_title">Lebegő gomb átlátszatlansága</string>
     <string name="pref_floating_button_x_title">Vízszintes pozíció (X)</string>
@@ -1141,7 +1141,7 @@
     <string name="oem_app_backend_adb">Végrehajtási mód: Self-ADB (127.0.0.1:5555) csatlakoztatva</string>
     <string name="oem_app_backend_none">Végrehajtási mód: Nincs. Kapcsolja be a vezeték nélküli hibakeresést vagy futtassa az "adb tcpip 5555" parancsot</string>
     <string name="oem_app_autokill_switch">Konfliktusos OEM alkalmazások automatikus letiltása indításkor</string>
-    <string name="oem_app_autokill_switch_desc">Elcsendesíti az ismert háttérfolyamatokat az Open Headunit indításakor.</string>
+    <string name="oem_app_autokill_switch_desc">Elcsendesíti az ismert háttérfolyamatokat az MotoLink indításakor.</string>
     <string name="oem_app_autokill_enabled">Automatikus letiltás aktív</string>
     <string name="oem_app_none_detected">Nem észlelhetők konfliktusos OEM alkalmazások.</string>
     <string name="oem_app_btn_commands">Parancsok</string>

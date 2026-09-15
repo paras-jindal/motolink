@@ -1,6 +1,6 @@
 
 <resources>
-    <string name="app_name">Open Headunit</string>
+    <string name="app_name">MotoLink</string>
     <string name="menu">Menü</string>
     <string name="settings">Ayarlar</string>
 
@@ -13,7 +13,7 @@
     <string name="video">Android Auto</string>
     <string name="self_mode">Dahili Mod</string>
     <string name="to_android_auto">Android Auto\'ya Geç</string>
-    <string name="title">Open Headunit</string>
+    <string name="title">MotoLink</string>
     <string name="remove">Kaldır</string>
     <string name="usb">USB</string>
     <string name="wifi">WiFi</string>
@@ -184,14 +184,14 @@
     <string name="usb_auto_connect">USB Otomatik Bağlan</string>
     <string name="usb_auto_connect_description">Uygulama açıldığında bilinen bir USB cihazına otomatik olarak bağlan.</string>
     <string name="auto_start_bt_label">Bluetooth ile otomatik başlat</string>
-    <string name="auto_start_bt_description">Belirli bir Bluetooth cihazı bağlandığında Open Headunit\'ı otomatik olarak aç.</string>
+    <string name="auto_start_bt_description">Belirli bir Bluetooth cihazı bağlandığında MotoLink\'ı otomatik olarak aç.</string>
     <string name="auto_start_offer_title">Otomatik başlatılsın mı?</string>
     <string name="auto_start_offer_message">Uygulamanın bu cihazla otomatik başlatılmasını ister misin, %1$s?</string>
     <string name="auto_start_offer_yes">Evet</string>
     <string name="auto_start_offer_no">Hayır</string>
     <string name="auto_start_offer_countdown">%1$d sn sonra Hayır</string>
     <string name="auto_start_wifi_label">WiFi ile otomatik başlat</string>
-    <string name="auto_start_wifi_description">Belirli bir WiFi SSID\'sine bağlandığında Open Headunit\'ı otomatik olarak aç.</string>
+    <string name="auto_start_wifi_description">Belirli bir WiFi SSID\'sine bağlandığında MotoLink\'ı otomatik olarak aç.</string>
     <string name="auto_start_wifi_ssid_label">WiFi SSID</string>
     <string name="auto_start_wifi_ssid_description">Sadece bu WiFi SSID\'sine bağlandığında bağlan</string>
     <string name="auto_start_wifi_warning">Eski özellik: Arka plan kısıtlamaları nedeniyle Android 8+ sürümlerinde güvenilir şekilde çalışmayabilir. Uygulamanın pil optimizasyonundan muaf tutulduğundan emin olun.</string>
@@ -216,7 +216,7 @@
     <string name="bt_permission_denied_title">Bluetooth İzni Gerekli</string>
     <string name="bt_permission_denied_message">Eşleşmiş cihazları seçmek için Bluetooth izni gereklidir. Lütfen uygulama ayarlarından izin verin.</string>
     <string name="overlay_permission_title">Arka Planda Başlatma İzni</string>
-    <string name="overlay_permission_description">Bluetooth bağlandığında Open Headunit\'ın otomatik olarak açılmasına izin vermek için lütfen bir sonraki ekranda \"Diğer uygulamaların üzerinde görüntüleme\" iznini etkinleştirin.</string>
+    <string name="overlay_permission_description">Bluetooth bağlandığında MotoLink\'ın otomatik olarak açılmasına izin vermek için lütfen bir sonraki ekranda \"Diğer uygulamaların üzerinde görüntüleme\" iznini etkinleştirin.</string>
     <string name="open_settings">Ayarlar</string>
     <string name="right_hand_drive">Sağdan direksiyon</string>
     <string name="right_hand_drive_description">Arayüzü sağdan direksiyonlu sürüş için konumlandırın</string>
@@ -293,9 +293,9 @@
 
     <string name="category_info">Bilgi</string>
     <string name="about">Hakkında &amp; Destek</string>
-    <string name="about_description">Open Headunit hakkında daha fazla bilgi alın</string>
+    <string name="about_description">MotoLink hakkında daha fazla bilgi alın</string>
     <string name="version">Sürüm</string>
-    <string name="about_title">Open Headunit Hakkında</string>
+    <string name="about_title">MotoLink Hakkında</string>
     <string name="copyright">© 2025-%d André Rinas</string>
 
     <string name="disclaimer_title">Güvenlik &amp; Sorumluluk</string>
@@ -305,7 +305,7 @@
         <b>1. Yola Odaklanın</b><br/>
         Bu yazılımı sürüş sırasında kullanmak dikkat dağıtıcı ve tehlikeli olabilir. Daima güvenli sürüşe öncelik verin ve tüm yerel trafik kurallarına uyun. Bu uygulamayı yalnızca güvenli olduğunda kullanın.<br/><br/>
         <b>2. Sorumluluk Sınırı</b><br/>
-        Open Headunit "olduğu gibi" sunulmaktadır ve herhangi bir garanti vermez. Geliştiriciler, bu yazılımın kullanımından kaynaklanan herhangi bir kaza, aracınıza/cihazınıza gelen hasar veya yasal sonuçlar için sorumluluk kabul etmez.<br/><br/>
+        MotoLink "olduğu gibi" sunulmaktadır ve herhangi bir garanti vermez. Geliştiriciler, bu yazılımın kullanımından kaynaklanan herhangi bir kaza, aracınıza/cihazınıza gelen hasar veya yasal sonuçlar için sorumluluk kabul etmez.<br/><br/>
         <b>3. Bağlantı yok</b><br/>
         Bu proje bağımsız bir açık kaynak girişimidir ve Google LLC veya Android Auto markasıyla bağlı değildir, onlar tarafından onaylanmamıştır veya onlarla bağlantılı değildir.
     ]]></string>
@@ -352,7 +352,7 @@
     <string name="wifi_disconnect_toast">Android Auto bağlantısı kesildi: Kablosuz AA kullanıyorsanız, telefon WiFi ayarlarında \"Ağlar arası geçiş yap\" veya \"Ağ hızlandırma\" seçeneklerini devre dışı bırakın</string>
     <string name="reset_usb_option">USB Bağlantısını Sıfırla</string>
     <string name="reset_usb_timeout">USB cihazı bulunamadı. Lütfen bağlantıyı kontrol edin.</string>
-    <string name="notification_service_running">Open Headunit çalışıyor</string>
+    <string name="notification_service_running">MotoLink çalışıyor</string>
     <string name="notification_projection_active">Android Auto yansıtılıyor</string>
     <string name="shortcut_connect_title">Bağlan</string>
     <string name="shortcut_connect_desc">Son telefona otomatik bağlan</string>
@@ -570,7 +570,7 @@
     <string name="settings_backup_saved_to">Ayar yedeği şuraya kaydedildi:\n%1$s</string>
     <string name="share_settings_backup">Ayar yedeğini paylaş</string>
     <string name="import_settings">Ayarları içe aktar</string>
-    <string name="import_settings_description">Bir Open Headunit yedeğinden ayarları geri yükle</string>
+    <string name="import_settings_description">Bir MotoLink yedeğinden ayarları geri yükle</string>
     <string name="import_settings_app_folder">Uygulama yedek klasöründen içe aktar</string>
     <string name="import_settings_downloads">İndirilenlerden içe aktar</string>
     <string name="import_settings_choose_file">Yedek dosyasını seç</string>
@@ -578,8 +578,8 @@
     <string name="settings_imported">Ayarlar içe aktarıldı: %1$d uygulandı, %2$d atlandı</string>
     <string name="settings_import_failed">Ayarlar içe aktarılamadı: %1$s</string>
     <string name="no_settings_backups_title">Yedek bulunamadı</string>
-    <string name="no_settings_backups_message">Uygulama yedek klasöründe Open Headunit yedeği bulunamadı. Önce bir yedek dışa aktarın, ardından buradan içe aktarın.</string>
-    <string name="no_settings_backups_downloads_message">İndirilenlerde Open Headunit yedeği bulunamadı. Önce İndirilenlere bir yedek dışa aktarın, ardından buradan içe aktarın.</string>
+    <string name="no_settings_backups_message">Uygulama yedek klasöründe MotoLink yedeği bulunamadı. Önce bir yedek dışa aktarın, ardından buradan içe aktarın.</string>
+    <string name="no_settings_backups_downloads_message">İndirilenlerde MotoLink yedeği bulunamadı. Önce İndirilenlere bir yedek dışa aktarın, ardından buradan içe aktarın.</string>
     <string name="no_file_picker_title">Dosya seçici mevcut değil</string>
     <string name="no_file_picker_message">Bu cihazda uyumlu bir dosya seçici yok. Bunun yerine İndirilenleri veya uygulama yedek klasörünü kullanabilirsiniz.</string>
     <string name="storage_permission_denied_backup">Depolama izni reddedildi. İndirilenler kullanılamadı.</string>
@@ -698,7 +698,7 @@
     <string name="onb_next">İleri</string>
     <string name="onb_skip">Atla</string>
     <string name="onb_ready_finish">Bitir</string>
-    <string name="onb_welcome_title">Open Headunit\'a hoş geldiniz</string>
+    <string name="onb_welcome_title">MotoLink\'a hoş geldiniz</string>
     <string name="onb_welcome_body">Bu hızlı kurulum cihazınızı tarar ve sizin için en iyi video, ekran ve gece modu ayarlarını seçer. Her şeyi daha sonra Ayarlar\'dan değiştirebilirsiniz.</string>
     <string name="onb_safety_title">Önce güvenlik</string>
     <string name="onb_safety_accept">Şartları okudum ve kabul ediyorum</string>
@@ -792,7 +792,7 @@
     <string name="support_rules_connection_title">Nasıl bağlandığınızı belirtin</string>
     <string name="support_rules_connection_desc">USB kablo, USB kablosuz adaptör, WiFi Direct, WiFi (headunit sunucusu) veya Self Mode. Kablosuz bağlantı kullanıyorsanız adaptör veya dongle modelini de ekleyin.</string>
     <string name="support_rules_appversion_title">Uygulama sürümünü ekleyin</string>
-    <string name="support_rules_appversion_desc">Hakkında ekranında gösterilen Open Headunit sürümü.</string>
+    <string name="support_rules_appversion_desc">Hakkında ekranında gösterilen MotoLink sürümü.</string>
     <string name="support_rules_logs_title">Olduğu anda günlükleri ekleyin</string>
     <string name="support_rules_logs_desc">Ayarlar\'da Gelişmiş sekmesini açın, Hata Ayıklama bölümünde Hata Ayıklama Modu\'nu etkinleştirin, sorunu yeniden oluşturun ve hemen ardından Günlükleri Dışa Aktar\'a dokunun; böylece günlük yalnızca başlangıcı değil sorunun yaşandığı anı da kapsar. Bu dosyayı konunuza ekleyin.</string>
     <string name="support_rules_search_title">Mükerrer konu açmayın</string>
@@ -803,8 +803,8 @@
     <string name="support_rules_describe_desc">Ne yaptığınızı, ne beklediğinizi ve gerçekte ne olduğunu yazın. Görsel sorunlar için bir ekran görüntüsü veya kısa bir video çok işe yarar.</string>
     <string name="support_rules_oneissue_title">Konu başına bir sorun</string>
     <string name="support_rules_oneissue_desc">Her konuyu tek bir sorunla sınırlı tutun ki takip edilip düzeltilebilsin. İlgisiz sorunlar için ayrı konular açın.</string>
-    <string name="rename_notice_title">Adımız Open Headunit olarak değişiyor</string>
-    <string name="rename_notice_message">Headunit Revived sizin sayenizde büyüyor ve kendine ait bir şeye dönüşüyor: Open Headunit. Yeni ismi önümüzdeki güncellemeler boyunca yavaş yavaş devreye alıyoruz, bu yüzden bir süre bazı yerlerde hâlâ eski ismi görebilirsin.\n\nAynı uygulama, arkasındaki aynı ekip ve tüm ayarların tam olduğu gibi kalıyor.</string>
+    <string name="rename_notice_title">Adımız MotoLink olarak değişiyor</string>
+    <string name="rename_notice_message">Headunit Revived sizin sayenizde büyüyor ve kendine ait bir şeye dönüşüyor: MotoLink. Yeni ismi önümüzdeki güncellemeler boyunca yavaş yavaş devreye alıyoruz, bu yüzden bir süre bazı yerlerde hâlâ eski ismi görebilirsin.\n\nAynı uygulama, arkasındaki aynı ekip ve tüm ayarların tam olduğu gibi kalıyor.</string>
     <string name="rename_notice_button">Anladım</string>
     <string name="aa174_notice_title">Önemli Bildirim: Android Auto 17.4+</string>
     <string name="aa174_notice_message"><![CDATA[Android Auto 17.4 sürümünden itibaren Google, Wireless Helper ile otomatik başlatmayı ve klasik Self-Mode özelliğini devre dışı bırakan değişiklikler yaptı.<br/><br/><b>Mevcut çözümler:</b><br/><br/><b>1. Headunit Server (Geliştirici Modu):</b><br/>Self-Mode için kalan tek çalışan çözüm! Telefonunuzda Android Auto geliştirici ayarlarını açın ve "Headunit sunucusunu başlat" seçeneğine dokunun.<br/><br/><b>2. Yerel (Native) Mod:</b><br/>Wi-Fi Direct veya araç sıcak noktası üzerinden doğrudan bağlanır.<br/><br/><b>3. Kablosuz USB Adaptörü:</b><br/>Donanımsal bir USB kablosuz adaptör en kararlı deneyimi sunar.<br/><br/><b>4. Wireless Helper:</b><br/>Android Auto 17.3 ve önceki sürümlerde sorunsuz çalışmaya devam etmektedir.]]></string>
@@ -836,7 +836,7 @@
     <string name="perm_write_settings_help">Lets the app turn the hotspot on automatically for wireless connections.</string>
     <string name="perm_storage_title">Storage</string>
     <string name="perm_storage_help">Needed to back up and restore your settings and to pick a custom loading image.</string>
-    <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"Open Headunit\" if you use those apps.</string>
+    <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"MotoLink\" if you use those apps.</string>
     <string-array name="vehicle_brands">
         <item>Google</item>
         <item>Android</item>
@@ -892,8 +892,8 @@
     <string name="github_issues_url">https://github.com/andreknieriem/open-headunit/issues</string>
     <string name="support_rules_english_title">All posts in English</string>
     <string name="boot_loop_paused_title">Wireless start-up paused</string>
-    <string name="boot_loop_paused_generic">This device restarted three times in a row shortly after Open Headunit started wireless, so wireless was left off this time. USB still works. Open the app to turn it back on.</string>
-    <string name="boot_loop_paused_native_wifi_direct">This device restarted three times in a row shortly after Open Headunit started wireless, so wireless was left off this time. On some head units the WiFi chipset takes the whole system down when a phone joins a WiFi Direct network. Try switching Android Auto mode to the head unit hotspot. USB still works.</string>
+    <string name="boot_loop_paused_generic">This device restarted three times in a row shortly after MotoLink started wireless, so wireless was left off this time. USB still works. Open the app to turn it back on.</string>
+    <string name="boot_loop_paused_native_wifi_direct">This device restarted three times in a row shortly after MotoLink started wireless, so wireless was left off this time. On some head units the WiFi chipset takes the whole system down when a phone joins a WiFi Direct network. Try switching Android Auto mode to the head unit hotspot. USB still works.</string>
     <string name="vehicle_make_hint">A real car brand shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps installed from outside the Play Store. Set it back to \"Google\" to get those apps listed again.</string>
     <string name="external_bt_nativeaa">Native Wireless cannot work on this head unit</string>
     <string name="external_bt_nativeaa_desc">Telefonunuz, Android\'in uygulamalara sunduğu Bluetooth yerine bu ana ünitenin kendi Bluetooth modülüyle (%1$s) eşleşir, bu yüzden kablosuz el sıkışması ona hiçbir zaman ulaşmaz.\n\nBu uygulama o modüle yalnızca bu ana ünitenin çalıştırmadığı bir ZJ/ZLink hizmeti üzerinden ulaşabilir. Bunun yerine USB\'yi veya bir WiFi modunu kullanın.</string>
@@ -1115,7 +1115,7 @@
 
     <string name="category_more_features">Daha Fazla Özellik</string>
     <string name="pref_enable_floating_button_title">Kayan Başlatıcı Düğmesi</string>
-    <string name="pref_enable_floating_button_summary">Open Headunit\'e hızlıca dönmek için OEM başlatıcı ve diğer uygulamaların üzerinde kayan bir düğme gösterir</string>
+    <string name="pref_enable_floating_button_summary">MotoLink\'e hızlıca dönmek için OEM başlatıcı ve diğer uygulamaların üzerinde kayan bir düğme gösterir</string>
     <string name="pref_floating_button_size_title">Kayan Düğme Boyutu</string>
     <string name="pref_floating_button_opacity_title">Kayan Düğme Opaklığı</string>
     <string name="pref_floating_button_x_title">Yatay Konum (X)</string>
@@ -1140,7 +1140,7 @@
     <string name="oem_app_backend_adb">Yürütme yöntemi: Self-ADB (127.0.0.1:5555) bağlı</string>
     <string name="oem_app_backend_none">Yürütme yöntemi: Yok. Kablosuz Hata Ayıklamayı açın veya "adb tcpip 5555" çalıştırın</string>
     <string name="oem_app_autokill_switch">Başlangıçta çakışan OEM uygulamalarını otomatik devre dışı bırak</string>
-    <string name="oem_app_autokill_switch_desc">Open Headunit başladığında çakışan uygulamaları ve servisleri susturur.</string>
+    <string name="oem_app_autokill_switch_desc">MotoLink başladığında çakışan uygulamaları ve servisleri susturur.</string>
     <string name="oem_app_autokill_enabled">Otomatik devre dışı bırakma etkin</string>
     <string name="oem_app_none_detected">Çakışan OEM uygulaması algılanmadı.</string>
     <string name="oem_app_btn_commands">Komutlar</string>

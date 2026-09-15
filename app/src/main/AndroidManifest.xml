@@ -44,7 +44,7 @@
         android:required="false" />
 
     <permission
-        android:name="com.andrerinas.openheadunit.permission.NAVIGATION_UPDATE"
+        android:name="com.motolink.android.permission.NAVIGATION_UPDATE"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -183,7 +183,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="headunit" />
+                <data android:scheme="motolink" />
                 <data android:host="selfmode" />
             </intent-filter>
 
@@ -274,34 +274,34 @@
             android:name=".automation.AutomationReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.andrerinas.openheadunit.ACTION_CONNECT" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_DISCONNECT" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_START_SELF_MODE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_STOP_SERVICE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_EXIT" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_SET_NIGHT_MODE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_START_WIRELESS" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_STOP_WIRELESS" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_START_WIRELESS_SCAN" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_NATIVE_AA_POKE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_NATIVE_AA_CANCEL_POKE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_NEARBY_CONNECT" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_CHECK_USB" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_REFRESH_SENSORS" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_RESTART_AUDIO" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_RAISE_PROJECTION" />
-                <action android:name="com.andrerinas.openheadunit.aap.action.REFRESH_SENSORS" />
-                <action android:name="com.andrerinas.openheadunit.aap.action.RESTART_AUDIO" />
-                <action android:name="com.andrerinas.openheadunit.aap.action.RAISE_PROJECTION" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_QUERY_STATE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_SET_SETTINGS" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_GET_SETTINGS" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_RESET_SETTINGS" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_SET_LOG_LEVEL" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_START_LOG_CAPTURE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_STOP_LOG_CAPTURE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_EXPORT_LOG" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_LOG_MARKER" />
+                <action android:name="com.motolink.android.ACTION_CONNECT" />
+                <action android:name="com.motolink.android.ACTION_DISCONNECT" />
+                <action android:name="com.motolink.android.ACTION_START_SELF_MODE" />
+                <action android:name="com.motolink.android.ACTION_STOP_SERVICE" />
+                <action android:name="com.motolink.android.ACTION_EXIT" />
+                <action android:name="com.motolink.android.ACTION_SET_NIGHT_MODE" />
+                <action android:name="com.motolink.android.ACTION_START_WIRELESS" />
+                <action android:name="com.motolink.android.ACTION_STOP_WIRELESS" />
+                <action android:name="com.motolink.android.ACTION_START_WIRELESS_SCAN" />
+                <action android:name="com.motolink.android.ACTION_NATIVE_AA_POKE" />
+                <action android:name="com.motolink.android.ACTION_NATIVE_AA_CANCEL_POKE" />
+                <action android:name="com.motolink.android.ACTION_NEARBY_CONNECT" />
+                <action android:name="com.motolink.android.ACTION_CHECK_USB" />
+                <action android:name="com.motolink.android.ACTION_REFRESH_SENSORS" />
+                <action android:name="com.motolink.android.ACTION_RESTART_AUDIO" />
+                <action android:name="com.motolink.android.ACTION_RAISE_PROJECTION" />
+                <action android:name="com.motolink.android.aap.action.REFRESH_SENSORS" />
+                <action android:name="com.motolink.android.aap.action.RESTART_AUDIO" />
+                <action android:name="com.motolink.android.aap.action.RAISE_PROJECTION" />
+                <action android:name="com.motolink.android.ACTION_QUERY_STATE" />
+                <action android:name="com.motolink.android.ACTION_SET_SETTINGS" />
+                <action android:name="com.motolink.android.ACTION_GET_SETTINGS" />
+                <action android:name="com.motolink.android.ACTION_RESET_SETTINGS" />
+                <action android:name="com.motolink.android.ACTION_SET_LOG_LEVEL" />
+                <action android:name="com.motolink.android.ACTION_START_LOG_CAPTURE" />
+                <action android:name="com.motolink.android.ACTION_STOP_LOG_CAPTURE" />
+                <action android:name="com.motolink.android.ACTION_EXPORT_LOG" />
+                <action android:name="com.motolink.android.ACTION_LOG_MARKER" />
             </intent-filter>
         </receiver>
 
@@ -395,11 +395,11 @@
             android:taskAffinity=""
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
-                <action android:name="com.andrerinas.openheadunit.ACTION_SET_NIGHT_MODE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_CONNECT" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_DISCONNECT" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_START_SELF_MODE" />
-                <action android:name="com.andrerinas.openheadunit.ACTION_STOP_SERVICE" />
+                <action android:name="com.motolink.android.ACTION_SET_NIGHT_MODE" />
+                <action android:name="com.motolink.android.ACTION_CONNECT" />
+                <action android:name="com.motolink.android.ACTION_DISCONNECT" />
+                <action android:name="com.motolink.android.ACTION_START_SELF_MODE" />
+                <action android:name="com.motolink.android.ACTION_STOP_SERVICE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -411,16 +411,16 @@
 
                 <data
                     android:host="connect"
-                    android:scheme="headunit" />
+                    android:scheme="motolink" />
                 <data
                     android:host="disconnect"
-                    android:scheme="headunit" />
+                    android:scheme="motolink" />
                 <data
                     android:host="nightmode"
-                    android:scheme="headunit" />
+                    android:scheme="motolink" />
                 <data
                     android:host="exit"
-                    android:scheme="headunit" />
+                    android:scheme="motolink" />
             </intent-filter>
         </activity>
 

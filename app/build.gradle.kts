@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.KotlinCompilerVersion
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 import java.util.Properties
 import java.io.FileInputStream
 
@@ -12,7 +10,7 @@ plugins {
 android {
     compileSdk = 36
     ndkVersion = "29.0.14206865"
-    namespace = "com.andrerinas.openheadunit"
+    namespace = "com.motolink.android"
 
     buildFeatures {
         buildConfig = true
@@ -76,7 +74,7 @@ android {
 
     sourceSets {
         getByName("main") {
-            assets.srcDirs("${project.layout.buildDirectory.get().asFile}/generated/assets/root")
+            assets.srcDir("${project.layout.buildDirectory.get().asFile}/generated/assets/root")
         }
     }
 
@@ -95,12 +93,11 @@ android {
         // installs, testers) and existing users just get a normal update. Only the display name
         // changed to Open Headunit. The code package and namespace stay openheadunit, so the
         // applicationId deliberately differs from the namespace, like com.google.talk for Hangouts.
-        applicationId = "com.andrerinas.headunitrevived"
+        applicationId = "com.motolink.android"
         minSdk = 16
         targetSdk = 36
-        versionCode = 108
-        versionName = "3.4.0-beta3"
-        setProperty("archivesBaseName", "${applicationId}_${versionName}")
+        versionCode = 1
+        versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
         vectorDrawables.useSupportLibrary = true
@@ -138,14 +135,21 @@ android {
         }
         create("release") {
             val defaultStoreFile = when {
+                rootProject.file("motolink-release-key.jks").exists() -> rootProject.file("motolink-release-key.jks")
+                file("../motolink-release-key.jks").exists() -> file("../motolink-release-key.jks")
                 rootProject.file("headunit-release-key.jks").exists() -> rootProject.file("headunit-release-key.jks")
                 file("../headunit-release-key.jks").exists() -> file("../headunit-release-key.jks")
                 else -> null
             }
-            if (defaultStoreFile != null) {
-                storeFile = defaultStoreFile
+            val motoLinkKeystore = when {
+                rootProject.file("motolink-release-key.jks").exists() -> rootProject.file("motolink-release-key.jks")
+                file("../motolink-release-key.jks").exists() -> file("../motolink-release-key.jks")
+                else -> defaultStoreFile
             }
-            keyAlias = "headunit-revived"
+            if (motoLinkKeystore != null) {
+                storeFile = motoLinkKeystore
+            }
+            keyAlias = "motolink"
 
             val keyfile = rootProject.file("key.properties")
             val signingPropsFile = rootProject.file("secrets.properties")
@@ -178,7 +182,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
-                getDefaultProguardFile("proguard-android.txt"),
+                getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-project.txt"
             )
 
@@ -218,9 +222,7 @@ android {
     }
 
     kotlinOptions {
-        (this as KotlinJvmOptions).let {
-            it.jvmTarget = "1.8"
-        }
+        jvmTarget = "1.8"
     }
 
     applicationVariants.all {

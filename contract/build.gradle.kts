@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.KotlinCompilerVersion
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions // Import KotlinJvmOptions
 
 plugins {
     id("com.android.library")
@@ -8,11 +6,10 @@ plugins {
 
 android {
     compileSdk = 34
-    namespace = "com.andrerinas.openheadunit.contract"
+    namespace = "com.motolink.android.contract"
 
     defaultConfig {
         minSdk = 16
-        targetSdk = 34
     }
 
 //    buildTypes {
@@ -33,9 +30,13 @@ android {
     }
 
     kotlinOptions {
-        (this as KotlinJvmOptions).let {
-           it.jvmTarget = "1.8"
-        }
+        jvmTarget = "1.8"
+    }
+    lint {
+        targetSdk = 34
+    }
+    testOptions {
+        targetSdk = 34
     }
 }
 
