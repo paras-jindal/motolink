@@ -1,16 +1,18 @@
-# Open Headunit
+# MotoLink
 
-<a href='https://play.google.com/store/apps/details?id=com.andrerinas.headunitrevived'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="200"/></a>
-<a href='http://www.amazon.com/gp/mas/dl/android?p=com.andrerinas.headunitrevived'><img alt='Available at Amazon Appstore' src='https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/amazon-appstore-badge-english-black.png' width="200"/></a>
+<a href='https://play.google.com/store/apps/details?id=com.motolink.android'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="200"/></a>
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/579b7b03-23e0-4eda-a05d-c51d28a72113"
-    alt="Headunit Logo"
+    alt="MotoLink Logo"
     height="200">
 </p>
 
-Open Headunit is an Android app that allows you to turn your Android tablet or phone into an Android Auto receiver. This project is a revived version of the original headunit project by the great Michael Reid. The original project can be found here:
-https://github.com/mikereidis/headunit
+MotoLink is an Android app that allows you to turn your Android tablet or phone into an Android Auto receiver. This project is a rebranded version of Open Headunit by Andre Knieriem, which is a revived version of the original headunit project by the great Michael Reid.
+
+The original projects can be found here:
+- Open Headunit: https://github.com/andreknieriem/open-headunit
+- Original Headunit: https://github.com/mikereidis/headunit
 
 ## NOTE!
 **Android Auto 17.4 and newer breaks almost all third-party wireless triggers including Self-Mode and the automated launch via Wireless Helper.**
@@ -26,13 +28,13 @@ Google has introduced internal changes preventing projection from launching auto
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/140bbfdb-5b4f-4d49-a419-85aa91b48371" />
 
 ## How to use
-**Check out the [Wiki](https://github.com/andreknieriem/open-headunit/wiki) for detailed documentation, setup guides and troubleshooting!**
+**Check out the [Wiki](https://github.com/paras-jindal/motolink/wiki) for detailed documentation, setup guides and troubleshooting!**
 
 ### Wired USB Connection
-- Connect your Android device (phone) to the tablet running Open Headunit via USB cable.
+- Connect your Android device (phone) to the tablet running MotoLink via USB cable.
 - Make sure that Android Auto is installed on your phone.
 - Set your phone to Host-Mode if nescessary and select Android Auto
-- Click the USB Button in Open Headunit, find your phone and click the right button to allow connection
+- Click the USB Button in MotoLink, find your phone and click the right button to allow connection
 - Click on your phone in the list and wait for Android Auto to start
 
 ### Wireless Connection Options
@@ -45,7 +47,7 @@ Choose from one of four connection strategies depending on your Android Auto ver
 #### 2. Native Mode (Wi-Fi Direct / Headunit Hotspot)
 - Directly communicates with Android Auto's native wireless protocol without helper apps.
 - Supports **Wi-Fi Direct (P2P)** or the **Headunit Hotspot** transport.
-- Configure under Open Headunit Settings -> **Android Auto Mode** -> **Native Mode**.
+- Configure under MotoLink Settings -> **Android Auto Mode** -> **Native Mode**.
 
 #### 3. Headunit Server (Essential for Self-Mode on AA 17.4+)
 - Starts the native Android Auto developer server directly on your phone or on the same device (Self-Mode).
@@ -53,13 +55,13 @@ Choose from one of four connection strategies depending on your Android Auto ver
   1. Open Android Auto settings on your phone (or tablet in Self-Mode).
   2. Scroll down and tap **Version** 10 times to unlock Developer settings.
   3. Tap the three-dot menu in the top right corner and choose **Start headunit server**.
-  4. In Open Headunit, tap the **WiFi** button to connect (or use Self-Mode).
+  4. In MotoLink, tap the **WiFi** button to connect (or use Self-Mode).
 
 #### 4. Wireless Helper (for Android Auto up to v17.3)
 - Our companion app triggers the wireless connection automatically in the background.
 - **Compatibility:** Android Auto **v17.3 and below**.
 - **Download:** [Wireless Helper on Google Play Store](https://play.google.com/store/apps/details?id=com.andrerinas.wirelesshelper)
-- **Setup:** Set Open Headunit Wireless Mode to **Helper Mode**, ensure both devices are in the same network or Wi-Fi Direct group, and start the service in the Wireless Helper app.
+- **Setup:** Set MotoLink Wireless Mode to **Helper Mode**, ensure both devices are in the same network or Wi-Fi Direct group, and start the service in the Wireless Helper app.
 
 ### Connect Wirelessly via Intent (Power Users)
 You can trigger a wireless connection attempt using an Android Intent. This is useful for automation tools like **Tasker**, **MacroDroid**, or via **ADB**.
@@ -74,7 +76,7 @@ adb shell am start -a android.intent.action.VIEW -d "headunit://connect?ip=192.1
 ## Known Issues
 - **Google Maps in Portrait Mode:** Touch interactions (searching, scrolling) within Google Maps may not work as expected when using Portrait Mode on some devices. **Fix:** Try reducing the **Pixel density (DPI)** setting to **below 200** (e.g., 190) in the app settings. This often restores full functionality.
 - **Wireless Connection Drops:** If the connection drops frequently, disable **"WiFi Assistant"** or **"Switch between networks"** in your phone's WiFi settings to prevent it from killing the connection due to "no internet." Check battery saving options.
-- **Self-mode on Android 10 (Q) and below:** Google has disabled the automatic wireless projection startup for Android 10 and below in Android Auto versions 16.4 and higher. While Self-mode still works on newer Android versions, it is normally impossible to trigger projection on Android 10 and below directly with recent Google app updates. **Workaround:** You can still use Self-mode on these devices by starting the built-in Android Auto Headunit Server and connecting via Wi-Fi mode (loopback). See the [Troubleshooting Guide](https://github.com/andreknieriem/open-headunit/wiki/Troubleshooting#self-mode-on-android-10-q-and-below) for step-by-step instructions.
+- **Self-mode on Android 10 (Q) and below:** Google has disabled the automatic wireless projection startup for Android 10 and below in Android Auto versions 16.4 and higher. While Self-mode still works on newer Android versions, it is normally impossible to trigger projection on Android 10 and below directly with recent Google app updates. **Workaround:** You can still use Self-mode on these devices by starting the built-in Android Auto Headunit Server and connecting via Wi-Fi mode (loopback). See the [Troubleshooting Guide](https://github.com/paras-jindal/motolink/wiki/Troubleshooting#self-mode-on-android-10-q-and-below) for step-by-step instructions.
 - **WiFi-Direct needs long to connect:** A user finds that this is related to Google Assistant instead of Gemini for AA. If you use Gemini on newer AA versions it just runs smooth again. No idea why this happens.
 - **Stuck on Android is starting** Check your video codec in the settings and set it to h264 if you have a device which does not support h265. Some devices have a broken h265 decoder and this will cause the app to stuck on "Android is starting" and never start the projection.
 
@@ -180,7 +182,7 @@ adb shell am start -a android.intent.action.VIEW -d "headunit://connect?ip=192.1
 - Fixing mulitiple WiFi-Direct and Native AA connection issues, thanks to @o-jcardenass, @andrecuellar and @notathf
 - Various fixes PR, thanks to @MrEAlderson
 - Selfmode on AA 17.4 now connects to the headunit dev server or opens the AA settings to start it
-- Rename the app to Open Headunit because of confusion with Headunit Reloaded (HUR)
+- Rename the app to MotoLink because of confusion with Headunit Reloaded (HUR)
 
 ### v.3.1.1
 - Reduce pressure on sensor events like night and gps and start/stop these events in onConnected, onDisconnect and onDestroy

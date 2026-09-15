@@ -1,31 +1,27 @@
-# Automating Open Headunit
+# Automating MotoLink
 
-Open Headunit can be driven from Tasker, MacroDroid, a launcher shortcut or `adb`, and it reports
+MotoLink can be driven from Tasker, MacroDroid, a launcher shortcut or `adb`, and it reports
 what the projection session is doing so a macro can react to it.
 
-## The one thing that trips everybody up
+## Automation Details
 
-The **package** and the **action prefix** are different, on purpose:
+The **package** and the **action prefix** are now unified in MotoLink:
 
 | | |
 |---|---|
-| package (applicationId) | `com.andrerinas.headunitrevived` |
-| action prefix (namespace) | `com.andrerinas.openheadunit` |
-
-The app kept its original Play Store listing when it was renamed, so the two never matched. Using
-the wrong one silently does nothing — there is no error. Copy the lines below rather than typing
-them.
+| package (applicationId) | `com.motolink.android` |
+| action prefix (namespace) | `com.motolink.android` |
 
 ## Sending a command
 
 Everything goes to one receiver:
 
 ```
-com.andrerinas.headunitrevived/com.andrerinas.openheadunit.automation.AutomationReceiver
+com.motolink.android/com.motolink.android.automation.AutomationReceiver
 ```
 
 **Tasker**: Action → Misc → Send Intent. Set *Target* to **Broadcast Receiver**, *Action* to the
-action you want, *Package* to `com.andrerinas.headunitrevived`, *Class* to the receiver above.
+action you want, *Package* to `com.motolink.android`, *Class* to the receiver above.
 Targeting a broadcast receiver is what lets this work without granting Tasker "Display over other
 apps" — an activity target needs it on Android 10 and up.
 
@@ -35,10 +31,10 @@ extras with explicit types; Tasker allows two.
 **adb**:
 
 ```bash
-PKG=com.andrerinas.headunitrevived
-RX=$PKG/com.andrerinas.openheadunit.automation.AutomationReceiver
+PKG=com.motolink.android
+RX=$PKG/com.motolink.android.automation.AutomationReceiver
 
-adb shell am broadcast -n $RX -a com.andrerinas.openheadunit.ACTION_QUERY_STATE
+adb shell am broadcast -n $RX -a com.motolink.android.ACTION_QUERY_STATE
 ```
 
 `am` sends ordered, so the reply comes back as JSON on the `data=` field. Tasker's Send Intent is
@@ -48,7 +44,7 @@ not ordered and cannot read a reply — a Tasker task watches the session broadc
 
 Open to any caller, like the steering-wheel key receivers already are.
 
-| Action (prefix `com.andrerinas.openheadunit.`) | Extras | Does |
+| Action (prefix `com.motolink.android.`) | Extras | Does |
 |---|---|---|
 | `ACTION_CONNECT` | `ip` (optional), `no_ui` | With `ip`, opens a session to Android Auto's head unit server on 5277. Without, checks USB. |
 | `ACTION_DISCONNECT` | | Ends the session. |
@@ -77,7 +73,7 @@ It applies to the next raise only, so an ordinary reconnect still comes to the f
 options; without it these are refused and the reply says so. Connecting and disconnecting are
 unaffected.
 
-| Action (prefix `com.andrerinas.openheadunit.`) | Extras | Does |
+| Action (prefix `com.motolink.android.`) | Extras | Does |
 |---|---|---|
 | `ACTION_SET_SETTINGS` | `json` or `path` | Applies a settings backup. Same format the in-app export writes. |
 | `ACTION_GET_SETTINGS` | `path` (optional) | Replies with the settings, or writes them to `path`. Credential-bearing keys are withheld; see below. |
@@ -104,7 +100,7 @@ that needed it, and any app on the device can send these:
 
 ## Reacting to the session
 
-The app broadcasts `com.andrerinas.headunitrevived.SESSION_STATE` whenever the session changes.
+The app broadcasts `com.motolink.android.SESSION_STATE` whenever the session changes.
 It is implicit and needs no permission, so **Tasker's *Intent Received* event works directly** —
 this is the answer to "how do I tell whether Android Auto is actually running on the head unit",
 which nothing else on the device reports (`%UIMODE` does not change for a head unit).
@@ -126,7 +122,7 @@ does not name the phone.
 Watch it from a shell with:
 
 ```bash
-adb shell am broadcast -a com.andrerinas.headunitrevived.SESSION_STATE --receiver-foreground
+adb shell am broadcast -a com.motolink.android.SESSION_STATE --receiver-foreground
 ```
 
 or just read the log — every event also prints as `AapService: session state <state>`.
