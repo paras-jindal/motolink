@@ -49,13 +49,33 @@ class AudioTrackWrapper(
          * accounting is off, so a bad subtraction costs a beat rather than a hang.
          */
         private const val DRAIN_CAP_MS = 1_000L
+
+        /**
+         * Backlog ceiling for the AAC write executor.
+         *
+         * AAC at 48 kHz with 20 ms chunks generates ~50 write tasks/second. A capacity of 8
+         * provides ~160 ms of burst absorption before back-pressure kicks in. An unbounded
+         * queue would let the backlog grow without limit when the AudioTrack write is slow,
+         * adding latency to the ACK path and indirectly stalling video flow control.
+         */
+        private const val WRITE_EXECUTOR_QUEUE_CAPACITY = 8
     }
 
     private val audioTrack: AudioTrack?
     private var decoder: MediaCodec? = null
     private var codecHandlerThread: HandlerThread? = null
     private val freeInputBuffers = LinkedBlockingQueue<Int>()
-    private val writeExecutor = Executors.newSingleThreadExecutor()
+    private val writeExecutor = java.util.concurrent.ThreadPoolExecutor(
+        1, 1,
+        0L, java.util.concurrent.TimeUnit.MILLISECONDS,
+        java.util.concurrent.ArrayBlockingQueue(WRITE_EXECUTOR_QUEUE_CAPACITY),
+        { r ->
+            Thread(r, "AudioTrack-Writer").apply {
+                Process.setThreadPriority(Process.THREAD_PRIORITY_AUDIO)
+            }
+        },
+        java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy()
+    )
     private val writeSemaphore = java.util.concurrent.Semaphore(3)
     private var equalizer: Equalizer? = null
 

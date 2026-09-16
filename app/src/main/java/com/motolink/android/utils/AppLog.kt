@@ -290,9 +290,17 @@ object AppLog {
             e("IllegalFormatException: formatString='%s' numArgs=%d", msg, array.size)
             formatted = "$msg (An error occurred while formatting the message.)"
         }
-        // Throwable's constructor already fills in the stack trace; calling fillInStackTrace()
-        // again captured the whole thing a second time, per emitted line.
-        val stackTrace = Throwable().stackTrace
+        // Deriving the caller tag requires a stack walk, which on Dalvik/ART involves
+        // a native call and allocates a StackTraceElement array. At INFO level and above
+        // (the production default) the tag is not needed for diagnosis, so skip it
+        // entirely to avoid GC pressure on the hot path (dozens of calls per second
+        // during active projection). At DEBUG level and below the walk is worth paying.
+        if (!LOG_DEBUG) {
+            return String.format(Locale.US, "[%d] %s", Thread.currentThread().id, formatted)
+        }
+        // Use Thread.currentThread().stackTrace rather than Throwable().stackTrace:
+        // same information, one fewer object allocation.
+        val stackTrace = Thread.currentThread().stackTrace
         var string = "<unknown>"
         for (i in 2 until stackTrace.size) {
             val className = stackTrace[i].className

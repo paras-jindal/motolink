@@ -1399,6 +1399,15 @@ class VideoDecoder(
 
     /**
      * Splits a combined packet into multiple NAL units and normalizes start codes.
+     *
+     * Each NAL unit is delivered to [callback] as a *fresh* [ByteArray] with a 4-byte start
+     * code, plus the byte offset of the first NAL header byte within that array (always 4).
+     * The array is owned by the callback; callers may retain it past the call.
+     *
+     * A single allocation is made per NAL unit: when the source already uses a 4-byte start
+     * code the slice is copied directly; when it uses a 3-byte code the normalized byte is
+     * prepended in the same allocation, avoiding the double-copy the previous implementation
+     * produced (rawNal + fixedNal).
      */
     private fun forEachNalUnit(buffer: ByteArray, offset: Int, size: Int, callback: (ByteArray, Int) -> Unit) {
         var currentPos = offset
@@ -1427,15 +1436,20 @@ class VideoDecoder(
                     }
                 }
 
-                val rawNal = buffer.copyOfRange(nalStart, nalEnd)
-                val fixedNal = if (startCodeLen == 3) {
-                    // Normalize to 4-byte start codes for better decoder compatibility
-                    ByteArray(rawNal.size + 1).apply {
-                        this[0] = 0; System.arraycopy(rawNal, 0, this, 1, rawNal.size)
-                    }
-                } else rawNal
-
-                callback(fixedNal, if (startCodeLen == 3) 4 else 4)
+                val nalLen = nalEnd - nalStart
+                if (startCodeLen == 3) {
+                    // Normalize to a 4-byte start code in a single allocation:
+                    // [0x00, 0x00, 0x00, 0x01, NAL_HEADER…]
+                    val nalData = ByteArray(nalLen + 1)
+                    nalData[0] = 0
+                    System.arraycopy(buffer, nalStart, nalData, 1, nalLen)
+                    callback(nalData, 4)
+                } else {
+                    // Already 4-byte — copy the slice once, directly.
+                    val nalData = ByteArray(nalLen)
+                    System.arraycopy(buffer, nalStart, nalData, 0, nalLen)
+                    callback(nalData, 4)
+                }
                 currentPos = nalEnd
             } else break
         }
@@ -1759,7 +1773,7 @@ class VideoDecoder(
             running = true
             clearFrameQueue()
             outputThread = Thread {
-                android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_DISPLAY)
+                android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_DISPLAY)
                 LegacyOptimizer.setHighPriority()
                 outputThreadLoop()
             }.apply { name = "VideoDecoder-Output"; start() }
@@ -1768,7 +1782,7 @@ class VideoDecoder(
             // prior stop() left and exit at birth - after which every frame queues into a feed
             // queue nobody drains.
             val newFeedThread = Thread {
-                android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_DISPLAY)
+                android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_DISPLAY)
                 feedThreadLoop()
             }.apply { name = "VideoDecoder-Feed" }
             feedThread = newFeedThread

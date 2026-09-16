@@ -284,6 +284,17 @@ class AapService : Service() {
     private var bootWakeLock: PowerManager.WakeLock? = null
 
     /**
+     * Partial wake lock held for the entire projection session (TransportStarted → Disconnected).
+     *
+     * Without this, aggressive CPU governors (especially MediaTek power-saving profiles) can
+     * drop the CPU to a low-power idle state mid-decode, causing the video feed and output
+     * threads to stall for tens of milliseconds — which is what the user perceives as the app
+     * "stucking". A PARTIAL_WAKE_LOCK keeps the CPU clocked while allowing the screen to sleep,
+     * which is the right trade-off for a head unit.
+     */
+    private var sessionWakeLock: PowerManager.WakeLock? = null
+
+    /**
      * Runtime-registered receiver for MEDIA_BUTTON intents.
      * Unlike manifest-registered receivers, runtime receivers are NOT affected by
      * Android 8+ implicit broadcast restrictions — this is a critical difference
@@ -1056,6 +1067,7 @@ class AapService : Service() {
                             setPackage(packageName)
                         })
                         maybeAutoResumePlaybackOnReconnect()
+                        acquireSessionWakeLock()
                     }
                     is CommManager.ConnectionState.Error -> {
                         // Nothing may be counted here, and nothing new may be hung off this branch.
@@ -1081,6 +1093,7 @@ class AapService : Service() {
                                 }
                             )
                             projectingSinceMs = 0L
+                            releaseSessionWakeLock()
                             onDisconnected(state)
                         }
                     }
@@ -2269,6 +2282,26 @@ class AapService : Service() {
         bootWakeLock = null
     }
 
+    private fun acquireSessionWakeLock() {
+        if (sessionWakeLock?.isHeld == true) return
+        val pm = getSystemService(Context.POWER_SERVICE) as PowerManager
+        sessionWakeLock = pm.newWakeLock(
+            PowerManager.PARTIAL_WAKE_LOCK,
+            "HeadunitRevived::ProjectionSession"
+        ).apply {
+            acquire(3 * 60 * 60 * 1000L) // 3-hour safety timeout; released on disconnect
+        }
+        AppLog.i("Session WakeLock acquired")
+    }
+
+    private fun releaseSessionWakeLock() {
+        if (sessionWakeLock?.isHeld == true) {
+            sessionWakeLock?.release()
+            AppLog.i("Session WakeLock released")
+        }
+        sessionWakeLock = null
+    }
+
     override fun onTaskRemoved(rootIntent: Intent?) {
         AppLog.i("AapService: onTaskRemoved — attempting restart")
         try {
@@ -2282,7 +2315,7 @@ class AapService : Service() {
 
     @SuppressLint("WrongConstant")
     override fun onDestroy() {
-        AppLog.i("AapService destroying... (wakeLock held=${bootWakeLock?.isHeld == true})")
+        AppLog.i("AapService destroying... (bootWakeLock held=${bootWakeLock?.isHeld == true}, sessionWakeLock held=${sessionWakeLock?.isHeld == true})")
         FloatingButtonManager.removeOverlay(this)
         isDestroying = true
         // Nothing else clears it here, and the manager outlives the service instance.
@@ -2297,6 +2330,7 @@ class AapService : Service() {
         settingsPrefs?.unregisterOnSharedPreferenceChangeListener(settingsPreferenceListener)
         settingsPrefs = null
         releaseBootWakeLock()
+        releaseSessionWakeLock()
 
         wifiLauncherManager.stop(WifiLauncherStopSequence.BEFORE_HOTSPOT_DISABLE)
         // The access point is left up here. Taking it down serves one purpose, putting the phone
