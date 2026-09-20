@@ -38,8 +38,8 @@ class AboutFragment : Fragment() {
         sb.append("<b>Special thanks to Mike Reidis for the original idea and android auto protocol and code.</b><br/>")
         sb.append("<a href=\"https://github.com/mikereidis/headunit\">https://github.com/mikereidis/headunit</a><br/><br/>")
         sb.append("<h3>Issues, bugs, and feedback or questions</h3>")
-        sb.append("If you need any help, go to the github page of this app. You will additionally can support me via <a href=\"https://www.paypal.me/anrinas\">Paypal</a><br/>")
-        sb.append("<a href=\"https://github.com/andreknieriem/open-headunit\">https://github.com/andreknieriem/open-headunit</a><br/><br/>")
+        sb.append("If you need any help, go to the github page of this app. You can additionally support me via <a href=\"https://razorpay.me/@louisemorphine\">Razorpay</a><br/>")
+        sb.append("<a href=\"https://github.com/paras-jindal/motolink\">https://github.com/paras-jindal/motolink</a><br/><br/>")
 
         sb.append(parseMarkdownToHtml(readAsset("CHANGELOG.md")))
         sb.append("<br/><br/>")

@@ -40,6 +40,9 @@ captures/
 
 # Keystore files
 *.jks
+*.jkc
+*-release-key.*
+key.properties
 
 # Secrets configuration file
 secrets.properties

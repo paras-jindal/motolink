@@ -2,7 +2,7 @@
 
 **Last updated:** September 1, 2026
 
-This Privacy Policy applies to the mobile application **MotoLink** (formerly known as **Headunit Revived**, package name: `com.motolink.android`), developed and published by **André Rinas** ("we", "our", or "us").
+This Privacy Policy applies to the mobile application **MotoLink** (formerly known as **Headunit Revived**, package name: `com.motolink.android`), developed and published by **Louise Morphine** ("we", "our", or "us").
 
 We are committed to protecting your privacy. This document outlines how MotoLink handles device data and permissions.
 
@@ -12,9 +12,9 @@ We are committed to protecting your privacy. This document outlines how MotoLink
 
 - **Application Name:** MotoLink (formerly Headunit Revived)
 - **Package Name:** `com.motolink.android`
-- **Developer / Publisher:** André Rinas
-- **Contact Email:** headunit@andrerinas.com
-- **Official Website:** https://headunit.andrerinas.com
+- **Developer / Publisher:** Louise Morphine
+- **Contact Email:** morphinelouise@gmail.com
+- **Project Repository:** https://github.com/paras-jindal/motolink
 
 ---
 
@@ -67,6 +67,6 @@ We may update this Privacy Policy from time to time to reflect improvements or r
 
 If you have questions, feedback, or concerns regarding this Privacy Policy or the data practices of **MotoLink**, please contact:
 
-- **Developer:** André Rinas
-- **Email:** headunit@andrerinas.com
+- **Developer:** Louise Morphine
+- **Email:** morphinelouise@gmail.com
 - **Project Repository:** https://github.com/paras-jindal/motolink

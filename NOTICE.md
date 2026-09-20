@@ -14,7 +14,7 @@ Full license text: see [LICENSE](./LICENSE) file.
 ## Copyright
 - Original Headunit: Copyright 2011-2015 Michael A. Reid. All rights reserved.
 - Open Headunit: Copyright Andre Knieriem and contributors.
-- MotoLink modifications: Copyright 2026 Paras Jindal.
+- MotoLink modifications: Copyright 2026 Louise Morphine.
 
 ## Modifications
 MotoLink includes the following changes from Open Headunit:
@@ -24,6 +24,6 @@ MotoLink includes the following changes from Open Headunit:
 
 ## Source Code
 The complete source code for MotoLink is available at:
-[Your GitHub Repository URL — you must fill this in before publishing]
+https://github.com/paras-jindal/motolink
 
 This is required under Section 13 of the AGPL-3.0 license.
